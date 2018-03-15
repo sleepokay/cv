@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\definecolor{links}{HTML}{006400}
+\usepackage{color}
+\usepackage{tikzpagenodes}
+
+%\hypersetup{colorlinks=true,urlcolor=links}
+\hypersetup{colorlinks=true, urlcolor=links,pdfborderstyle={/S/U/W 1},pdfborder=0 0 1}
+%\hypersetup{%
+%  colorlinks=true,% hyperlinks will be coloured
+%  linkcolor=green,% hyperlink text will be green
+%  linkbordercolor=red,% hyperlink border will be red
+%}
+
+%\makeatletter
+%\Hy@AtBeginDocument{%
+%  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
+%  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
+                                % Hyperlink border style will be underline of width 1pt
+%}
+%\makeatother
+
+\begin{document}
+
+\begin{minipage}[t]{.6\textwidth}
+\vspace{.0pt}
+{\Huge Michael {\textbf{Hsu}}}\\
+\href{mailto:sleepokay@gmail.com}{sleepokay@gmail.com} \textbullet{} 202-468-6030
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.3\textwidth}
+\vspace{\topsep}
+Github: \href{https://github.com/sleepokay}{@sleepokay}\\
+Personal: \href{http://everythingisreally.com}{everythingisreally.com}
+\end{minipage}
+\namesection{}{} % for some reason...
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\begin{tikzpicture}[remember picture,overlay,shift={(current page.north east)}]
+\node[anchor=north east,xshift=-0.2cm,yshift=-2.3cm]{\includegraphics[width=250pt]{intro.png}};
+\end{tikzpicture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{3pt}
+\runsubsection{Fluent}
+\descript{\quad}
+\skills{\quad Python, JavaScript, Java, HTML/CSS, SQL}
+\vspace{3pt}
+\skills{\quad Django, Bootstrap, JQuery, PostgreSQL, ArcGIS, Photoshop}
+\vspace{8pt}
+\runsubsection{Familiar}
+\descript{\quad}
+\skills{\quad PHP, C, C++, Standard ML}
+\skills{\quad AWS, Google Cloud, Kubernetes, ReactJS, Node.js}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\vspace{3pt}
+\runsubsection{McGill University}
+\descript{|  B.A. Computer Science}
+\vspace{1pt}
+\location{2009 - 2014 \textbullet{} Montreal, QC}
+\begin{tightemize}
+\item \testing{Areas of focus: algorithms, discrete math, complexity theory.}
+\item \testing{Graduate level bioinformatics research on phylogenetic algorithms + RNA folding structures.}
+\item \testing{Minors in English Lit. and Mathematics.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{New England Complex Systems Institute}
+\descript{| Complex systems theory and modelling}
+\vspace{1pt}
+\location{2016 \textbullet{} Cambridge, MA}
+\begin{tightemize}
+\item\testing{Studied cellular automata, network effects, biological systems, geosocial systems.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Recurse Center}
+\descript{| independent study}
+\vspace{1pt}
+\location{2017 \textbullet{} New York, NY}
+\begin{tightemize}
+\item\testing{Studied computational plant models, generative art, data visualization, image recognition, shaders, and web extensions.}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Recent Experience}
+\vspace{3pt}
+\runsubsection{Shopthat}
+\descript{| software engineer }
+\vspace{1pt}
+\location{2017 – 2018 \textbullet{}  New York, NY}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{2pt}
+\begin{tightemize}
+\item \testing{Fullstack development for e-commerce application and B2B data analytics platform.}
+\item \testing{Worked with YouTube and Instagram APIs to create data pipeline and do fuzzy string matching.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Taiwan National Service}
+\descript{| hualien cultural center }
+\vspace{1pt}
+\location{2014 – 2016 \textbullet{}  Hualien, Taiwan}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{2pt}
+\begin{tightemize}
+\item \testing{Some low-key data engineering for audience questionnaires database.}
+\item \testing{Light and sound systems technician.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{McGill Geographic Information Center}
+\descript{| cartography researcher }
+\vspace{1pt}
+\location{2013 – 2014 \textbullet{} Montreal, QC}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{2pt}
+\begin{tightemize}
+\item \testing{Field data ETL and analysis for large-scale study of Amazon River communities.}
+\item \testing{Designed and created comprehensive maps of North American coastal wetlands.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Decode Global}
+\descript{| design \& programming intern}
+\vspace{1pt}
+\location{2013 \textbullet{} Montreal, QC}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{2pt}
+\begin{tightemize}
+\item \testing{Implemented gamma correction image module for the mWater clean water project.}
+\item \testing{Developed and tested social awareness mobile game \textit{Get Water}.}
+\end{tightemize}
+\sectionsep
+
+\end{document}  \documentclass[]{article}
