@@ -51,6 +51,8 @@
 \definecolor{links}{HTML}{006400}
 \usepackage{color}
 \usepackage{tikzpagenodes}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
 
 %\hypersetup{colorlinks=true,urlcolor=links}
 \hypersetup{colorlinks=true, urlcolor=links,pdfborderstyle={/S/U/W 1},pdfborder=0 0 1}
@@ -93,6 +95,30 @@ Personal: \href{http://everythingisreally.com}{everythingisreally.com}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\begin{multicols}{2}
+\runsubsection{Fluent}
+\descript{\quad}
+\skills{\quad Python, JavaScript, Java, HTML/CSS, SQL}
+\vspace{3pt}
+\skills{\quad Django, Bootstrap, JQuery, PostgreSQL, ArcGIS, Photoshop}
+
+\columnbreak
+
+\runsubsection{Familiar}
+\descript{\quad}
+\skills{\quad PHP, C, C++, Standard ML}
+\skills{\quad React, Node.js, AWS, nginx}
+\sectionsep
+\end{multicols}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -105,7 +131,7 @@ Personal: \href{http://everythingisreally.com}{everythingisreally.com}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item \testing{Fullstack development of e-commerce and B2B data analytics platform with Django backend and React and Bootstrap frontends. Service was run on multiple Docker containers and backed by a PostgreSQL database. }
-\item \testing{Extensive integration work with Facebook, YouTube, and Instagram APIs. Built a data pipeline to ingest and process roughly 500,000 Youtube and Instagram social media posts and videos per day. Implemented a sharing feature for a Facebook Messenger chatbot that saw 7\% increase in product page visits.}
+\item \testing{Extensive integration work with Facebook, YouTube, and Instagram APIs. Built a data pipeline to ingest and process roughly half a million Youtube and Instagram social media posts and videos per day. Implemented a sharing feature for a Facebook Messenger chatbot that saw 7\% increase in product page visits.}
 \item \testing{Implemented fuzzy string matching in conjunction with n-grams algorithm to link social media content to tens of thousands of product SKUs, as well as a recommendation system for products using said relations table.}
 \item \testing{URL routing, encoding, and parsing with Django and nginx.}
 \item \testing{Paired on configuring and maintaining services such as Kubernetes, Oauth2, Celery task manager, and Jenkins for continuous integration.}
@@ -121,7 +147,6 @@ Personal: \href{http://everythingisreally.com}{everythingisreally.com}
 \item\testing{Implemented grid-based visualization of Thomas Schelling's model of racial dynamics in Javascript.}
 \item \testing{Using OpenCV and dlib, made facial alignment and averaging script for profile photos of Recurse Center participants.}
 \item \testing{Created visualization of fractal forms of plants (L-systems) in Javascript and p5 framework.}
-\item \testing{Other activities include playing with shaders using GLSL and OpenGL, making joke JavaScript web extensions, and creating generative art sketches in Processing and p5.}
 \end{tightemize}
 \sectionsep
 
@@ -130,8 +155,7 @@ Personal: \href{http://everythingisreally.com}{everythingisreally.com}
 \vspace{1pt}
 \location{August 2016 \textbullet{} Cambridge, MA}
 \begin{tightemize}
-\item\testing{Intensive multi-disciplinary science and modelling course hosted at MIT. Studied topics such as cellular automata, emergent behaviors, network effects, biological systems, and geosocial systems.}
-\item \testing{Studied and modelled network effects using Python, e.g. Twitter social graph analysis and Watts Strogatz models of "small world" networks.}
+\item\testing{Intensive multi-disciplinary science and modelling course hosted at MIT. Studied topics such as cellular automata, emergent behaviors, network effects, biological systems, and geosocial systems. Studied and modelled network effects using Python, e.g. Twitter social graph analysis and Watts Strogatz models of "small world" networks.}
 \end{tightemize}
 \sectionsep
 
@@ -141,8 +165,7 @@ Personal: \href{http://everythingisreally.com}{everythingisreally.com}
 \location{October 2014 – June 2016 \textbullet{}  Hualien, Taiwan}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item \testing{Data engineer for audience questionnaires. Through Ploty's API, generated graphs and reports of audience demographics and opinions for hundreds of events and shows. Also redesigned questionnaire to be more amenable to automatic processing.}
-\item \testing{Lights and sound technician for the Hualien Concert Hall. Learned how to operate and program a digital lightboard, and helped rewire the intercom system.}
+\item \testing{Data engineer for audience questionnaires. Using Ploty API, generated graphs and reports of audience demographics and opinions for hundreds of events and shows. Also redesigned questionnaire to be more amenable to automatic processing.}
 \end{tightemize}
 \sectionsep
 
@@ -165,7 +188,6 @@ Personal: \href{http://everythingisreally.com}{everythingisreally.com}
 \begin{tightemize}
 \item \testing{Designed and built company website with WordPress and PHP.}
 \item \testing{Helped prototype image gamma correction module in Javascript for open source water testing project mWater.}
-\item \testing{Helped develop and test social awareness mobile game Get Water in Unity Engine.}
 
 \end{tightemize}
 \sectionsep
